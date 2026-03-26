@@ -1,0 +1,28 @@
+@startuml
+start
+
+:User enters username and password;
+:User clicks Log In;
+:System sends login request to Login.php;
+
+if (Credentials valid?) then (yes)
+  :Redirect to color page;
+
+  if (User chooses Search Color) then (yes)
+    :User enters search term;
+    :System sends request to SearchColors.php;
+    :Retrieve matching colors;
+    :Display search results;
+  else (no)
+    :User enters new color;
+    :System sends request to AddColor.php;
+    :Store new color;
+    :Display confirmation message;
+  endif
+
+else (no)
+  :Display "User/Password combination incorrect";
+endif
+
+stop
+@enduml
