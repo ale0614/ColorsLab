@@ -1,0 +1,16 @@
+{
+  "name": "colorslab",
+  "version": "1.0.0",
+  "scripts": {
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:js": "eslint \"**/*.js\"",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "htmlhint": "^1.6.3",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}
