@@ -10,6 +10,7 @@
   "devDependencies": {
     "eslint": "^9.0.0",
     "htmlhint": "^1.6.3",
+    "jest": "^30.3.0",
     "stylelint": "^16.0.0",
     "stylelint-config-standard": "^38.0.0"
   }
